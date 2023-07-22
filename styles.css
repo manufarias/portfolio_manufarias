@@ -43,8 +43,6 @@ h6 {
   isolation: isolate;
 }
 
-@import url("https://rsms.me/inter/inter.css");
-
 /* =========layout============= */
 
 body {
@@ -67,6 +65,13 @@ h3 {
   align-items: center;
   justify-content: center;
   padding: 32px 16px;
+  gap: 32px;
+}
+
+.proyectos {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 16px;
   gap: 24px;
 }
 
@@ -85,7 +90,6 @@ nav ul {
   flex-wrap: nowrap;
   gap: 8px;
   max-width: 570px;
-  line-height: 170%;
 }
 
 .heroimg {
@@ -93,6 +97,43 @@ nav ul {
   align-items: baseline;
 }
 
+.cardproyecto {
+  display: flex;
+  flex-direction: column;
+  min-width: 295px;
+  max-width: 320px;
+  padding: 24px 16px 16px 16px;
+  gap: 16px;
+}
+
+.cardproyecto .header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.uxroles {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  align-self: stretch;
+}
+
+.uxrol {
+  display: flex;
+  gap: 8px;
+}
+
+.uxroles .designer,
+.uxroles .researcher {
+  padding: 4px 8px;
+}
+
+.cardproyecto a {
+  text-align: right;
+}
 /* =========style============= */
 
 body {
@@ -101,7 +142,7 @@ body {
   color: #475569;
 }
 
-header {
+.hero {
   background: #fafafa;
 }
 
@@ -109,6 +150,45 @@ nav ul li {
   list-style-type: none;
   color: rgba(71, 85, 105);
   font-weight: 400;
+}
+
+.cardproyecto {
+  background-color: #fafafa;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.04);
+}
+
+.cardproyecto h3 {
+  color: #3c3c43;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 30px */
+}
+
+.uxroles .designer {
+  border-radius: 4px;
+  border: 1px solid #f8d87c;
+  background: #fffae1;
+
+  color: #946900;
+  font-size: 12px;
+  line-height: 150%; /* 18px */
+}
+
+.uxroles .researcher {
+  border-radius: 4px;
+  border: 1px solid #e3ccf4;
+  background: #f9f1fe;
+
+  color: #793aaf;
+  font-size: 12px;
+  line-height: 150%; /* 18px */
+}
+
+.cardproyecto a {
+  color: #069678;
 }
 
 /* Styles para resolucion de 1024px y mayor  */
