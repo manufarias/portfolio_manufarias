@@ -1,0 +1,133 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+@import url("https://rsms.me/inter/inter.css");
+
+/* =========layout============= */
+
+body {
+  display: flex;
+  flex-direction: column;
+  font: inter;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+  gap: 24px;
+}
+
+/* =========Module============= */
+
+nav ul {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  gap: 32px;
+}
+
+.herocontent {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 8px;
+  max-width: 570px;
+  line-height: 170%;
+}
+
+.heroimg {
+  display: flex;
+  align-items: baseline;
+}
+
+/* =========style============= */
+
+body {
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  color: #475569;
+}
+
+header {
+  background: #fafafa;
+}
+
+nav ul li {
+  list-style-type: none;
+  color: rgba(71, 85, 105);
+  font-weight: 400;
+}
+
+/* Styles para resolucion de 1024px y mayor  */
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 127px;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+}
