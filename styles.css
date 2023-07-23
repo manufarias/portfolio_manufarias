@@ -59,7 +59,7 @@ h3 {
 }
 
 main,
-footer {
+.footcontent {
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -80,6 +80,10 @@ footer {
   flex-direction: column;
   padding: 32px 16px;
   gap: 24px;
+}
+
+footer {
+  width: 100%;
 }
 
 /* =========Module============= */
@@ -149,6 +153,15 @@ nav ul {
   width: 64px;
   height: 64px;
 }
+
+footer button {
+  display: flex;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+}
+
 /* =========style============= */
 
 body {
@@ -204,6 +217,19 @@ nav ul li {
 
 .cardproyecto a {
   color: #069678;
+}
+
+footer {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+footer button {
+  border-radius: 8.037px;
+  border: 1.005px solid #3e3e3e;
+  background: #373737;
+  box-shadow: 0px 4.018306732177734px 8.036613464355469px 0px rgba(0, 0, 0, 0.2);
+  color: #fff;
 }
 
 /* Styles para resolucion de 1024px y mayor  */
