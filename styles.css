@@ -58,7 +58,8 @@ h3 {
   font-weight: 500;
 }
 
-main {
+main,
+footer {
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -108,7 +109,7 @@ nav ul {
   display: flex;
   flex-direction: column;
   min-width: 295px;
-  max-width: 320px;
+  max-width: 350px;
   padding: 24px 16px 16px 16px;
   gap: 16px;
 }
@@ -121,6 +122,10 @@ nav ul {
   align-self: stretch;
 }
 
+.cardproyecto a {
+  text-align: right;
+}
+
 .uxroles {
   display: flex;
   align-items: flex-start;
@@ -131,15 +136,13 @@ nav ul {
 .uxrol {
   display: flex;
   gap: 8px;
+  flex-wrap: nowrap;
 }
 
 .uxroles .designer,
 .uxroles .researcher {
   padding: 4px 8px;
-}
-
-.cardproyecto a {
-  text-align: right;
+  flex-wrap: nowrap;
 }
 
 .cardformacion img {
