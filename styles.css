@@ -43,193 +43,94 @@ h6 {
   isolation: isolate;
 }
 
-/* =========layout============= */
-
-body {
-  display: flex;
-  flex-direction: column;
-  font: inter;
-}
-
-h1,
-h2,
-h3 {
-  font-size: 18px;
-  font-weight: 500;
-}
-
-main,
-.footcontent {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-}
-
-.hero {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
-  padding: 32px 16px;
-  gap: 32px;
-}
-
-.proyectos {
-  display: flex;
-  flex-direction: column;
-  padding: 32px 16px;
-  gap: 24px;
-}
-
-footer {
-  width: 100%;
-}
+/* =========Layout============= */
 
 /* =========Module============= */
-
-nav ul {
+nav {
   display: flex;
-  padding: 16px;
-  align-items: center;
-  gap: 32px;
+  flex-direction: column;
 }
 
 .herocontent {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  gap: 8px;
-  max-width: 570px;
+  padding: 16px;
+  gap: 32px;
 }
 
-.heroimg {
+/* =========Components============= */
+
+nav ul {
+  display: flex;
+  padding: 16px;
+  gap: 24px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.descriptionbottom {
+  max-width: 350px;
+}
+
+.illustration {
   display: flex;
   align-items: baseline;
-}
-
-.cardproyecto,
-.cardformacion {
-  display: flex;
-  flex-direction: column;
-  min-width: 295px;
-  max-width: 350px;
-  padding: 24px 16px 16px 16px;
-  gap: 16px;
-}
-
-.cardproyecto .header {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  align-self: stretch;
-}
-
-.cardproyecto a {
-  text-align: right;
-}
-
-.uxroles {
-  display: flex;
-  align-items: flex-start;
-  gap: 6px;
-  align-self: stretch;
-}
-
-.uxrol {
-  display: flex;
-  gap: 8px;
-  flex-wrap: nowrap;
-}
-
-.uxroles .designer,
-.uxroles .researcher {
-  padding: 4px 8px;
-  flex-wrap: nowrap;
-}
-
-.cardformacion img {
-  width: 64px;
-  height: 64px;
-}
-
-footer button {
-  display: flex;
-  padding: 8px 24px;
   justify-content: center;
-  align-items: center;
-  align-self: stretch;
 }
 
-/* =========style============= */
+/* =========Utils============= */
+
+/* =========Style============= */
 
 body {
-  font-size: 14px;
+  background-color: #fafbfc;
   font-family: "Inter", sans-serif;
-  color: #475569;
+  color: #687076;
+  font-size: 14px;
 }
 
-.hero {
-  background: #fafafa;
-}
-
-nav ul li {
-  list-style-type: none;
-  color: rgba(71, 85, 105);
-  font-weight: 400;
-}
-
-.cardproyecto {
-  background-color: #fafafa;
-  border: 1px solid #dcdcdc;
-  border-radius: 4px;
-  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.04);
-}
-
-.cardproyecto h3 {
-  color: #3c3c43;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%; /* 30px */
-}
-
-.uxroles .designer {
-  border-radius: 4px;
-  border: 1px solid #f8d87c;
-  background: #fffae1;
-
-  color: #946900;
-  font-size: 12px;
-  line-height: 150%; /* 18px */
-}
-
-.uxroles .researcher {
-  border-radius: 4px;
-  border: 1px solid #e3ccf4;
-  background: #f9f1fe;
-
-  color: #793aaf;
-  font-size: 12px;
-  line-height: 150%; /* 18px */
-}
-
-.cardproyecto a {
-  color: #069678;
+header,
+.seccionhero {
+  background-color: #fff;
+  border-bottom: 1px solid #f8f9fa;
 }
 
 footer {
-  background-color: #2a2a2a;
-  color: #fff;
+  background-color: #202022;
 }
 
-footer button {
-  border-radius: 8.037px;
-  border: 1.005px solid #3e3e3e;
-  background: #373737;
-  box-shadow: 0px 4.018306732177734px 8.036613464355469px 0px rgba(0, 0, 0, 0.2);
-  color: #fff;
+nav ul li,
+nav ul li a {
+  text-decoration: none;
+  list-style: none;
+}
+
+nav ul li a:visited {
+  color: #687076;
+}
+
+h1 {
+  background: linear-gradient(
+    147deg,
+    #6a8bfa 2.6%,
+    #b14b99 53.71%,
+    #ee6b45 69.96%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Styles para resolucion de 768px y mayor  */
+@media (min-width: 768px) {
+  .herocontent {
+    flex-direction: row;
+    padding: 24px;
+  }
 }
 
 /* Styles para resolucion de 1024px y mayor  */
@@ -238,17 +139,9 @@ footer button {
   body {
     font-size: 16px;
   }
-
-  .hero {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+  nav,
+  .herocontent {
     align-items: center;
-    justify-content: center;
-    gap: 127px;
-  }
-
-  nav ul {
     justify-content: center;
   }
 }
