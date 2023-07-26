@@ -46,16 +46,21 @@ h6 {
 /* =========Layout============= */
 
 /* =========Module============= */
-nav {
+nav,
+.herocontent,
+.proyectoscontent {
   display: flex;
   flex-direction: column;
 }
 
-.herocontent {
-  display: flex;
-  flex-direction: column;
+.herocontent,
+.proyectoscontent {
   padding: 16px;
   gap: 32px;
+}
+
+.herocontent {
+  align-items: flex-start;
 }
 
 /* =========Components============= */
@@ -66,20 +71,43 @@ nav ul {
   gap: 24px;
 }
 
-.description {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.descriptionbottom {
-  max-width: 350px;
+.herodescriptionbottom {
+  max-width: 480px;
 }
 
 .illustration {
   display: flex;
+  width: 100%;
   align-items: baseline;
   justify-content: center;
+}
+
+.herodescription,
+.cardproyecto,
+.grupoproyectos,
+.proyectodescription,
+.proyectodescriptiontop,
+.proyectodescriptionbottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.herodescription,
+.proyectodescriptiontop {
+  gap: 8px;
+}
+
+.cardproyecto {
+  padding: 16px;
+}
+
+.proyectodescription,
+.proyectodescriptionbottom {
+  gap: 24px;
+}
+
+.grupoproyectos {
+  gap: 32px;
 }
 
 /* =========Utils============= */
@@ -99,6 +127,12 @@ header,
   border-bottom: 1px solid #f8f9fa;
 }
 
+.cardproyecto {
+  border-radius: 8px;
+  border: 1px solid #ebedee;
+  background: #fff;
+  box-shadow: 4px 4px 0px 0px #f1f3f5;
+}
 footer {
   background-color: #202022;
 }
@@ -127,21 +161,42 @@ h1 {
 
 /* Styles para resolucion de 768px y mayor  */
 @media (min-width: 768px) {
+  nav {
+    padding-left: 8px;
+  }
+
   .herocontent {
     flex-direction: row;
     padding: 24px;
+    align-items: center;
+  }
+
+  .illustration {
+    width: auto;
   }
 }
 
 /* Styles para resolucion de 1024px y mayor  */
 
 @media (min-width: 1024px) {
+  nav {
+    padding-left: 16px;
+  }
+
   body {
     font-size: 16px;
   }
-  nav,
+
   .herocontent {
-    align-items: center;
+    padding: 32px;
+  }
+}
+
+/* Styles para resolucion de 1440px y mayor  */
+
+@media (min-width: 1440px) {
+  nav ul,
+  .herocontent {
     justify-content: center;
   }
 }
