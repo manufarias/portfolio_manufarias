@@ -350,6 +350,7 @@ h1 {
   .proyectoscontent {
     width: 700px;
     margin: 0 auto;
+    align-items: flex-start;
   }
 
   .herocontent,
@@ -368,13 +369,6 @@ h1 {
 @media (min-width: 1440px) {
   nav {
     padding-left: 36px;
-  }
-
-  nav ul,
-  .herocontent,
-  .proyectoscontent {
-    width: 700px;
-    margin: 0 auto;
   }
 
   .herocontent .title {
