@@ -61,6 +61,10 @@ nav,
   align-items: flex-start;
 }
 
+.footercontent {
+  padding-top: 48px;
+}
+
 /* =========Components============= */
 
 nav ul {
@@ -137,6 +141,10 @@ nav ul {
   gap: 16px;
 }
 
+.formaciondescription {
+  max-width: 350px;
+}
+
 .cardproyecto a {
   color: #069678;
   text-align: end;
@@ -199,13 +207,16 @@ h3 {
 
 /* =========Utils============= */
 
+.img svg {
+  transform: scale(1.5);
+}
+
 /* =========Style============= */
 
 body {
   background-color: #fafbfc;
   font-family: "Inter", sans-serif;
   color: #687076;
-  font-size: 14px;
 }
 
 header,
@@ -306,13 +317,24 @@ h1 {
   }
 
   .herocontent,
-  .proyectoscontent {
+  .proyectoscontent,
+  .formacioncontent {
     padding: 24px;
   }
 
   .herocontent {
     flex-direction: row;
     align-items: center;
+  }
+
+  nav ul,
+  .herocontent,
+  .proyectoscontent,
+  .formacioncontent,
+  .footercontent {
+    width: 700px;
+    margin: 0 auto;
+    align-items: flex-start;
   }
 
   .illustration {
@@ -332,6 +354,13 @@ h1 {
   .uxroles .uidesign {
     font-size: 14px;
   }
+
+  .formaciontop {
+    width: 350px;
+  }
+  .formaciontop .formaciontitulo {
+    width: 100%;
+  }
 }
 
 /* Styles para resolucion de 1024px y mayor  */
@@ -343,14 +372,6 @@ h1 {
 
   body {
     font-size: 16px;
-  }
-
-  nav ul,
-  .herocontent,
-  .proyectoscontent {
-    width: 700px;
-    margin: 0 auto;
-    align-items: flex-start;
   }
 
   .herocontent,
