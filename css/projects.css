@@ -1,0 +1,143 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/*======layout======*/
+
+.section-hero {
+  display: flex;
+  width: 320px;
+  height: 600px;
+  padding: 0px 16px;
+  gap: 8px;
+}
+
+/*======modules======*/
+
+.hero-container {
+  display: flex;
+  padding: 32px 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+/*======components======*/
+
+.herodescription {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.herodescription-top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.herodescription-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.herocase-roles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.uxroles {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/*======styles=====*/
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.herodescription-top span {
+  color: #1967d2;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 175% */
+}
+
+.herodescription-top h1 {
+  color: #424c59;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%; /* 43.2px */
+}
+
+.herodescription-bottom .herocase-description {
+  color: #546172;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+
+.herodescription-bottom .herocase-roles {
+  color: #808fa4;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

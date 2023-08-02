@@ -214,7 +214,7 @@ h3 {
 /* =========Style============= */
 
 body {
-  background-color: #fafbfc;
+  background-color: hsl(210, 5%, 99%);
   font-family: "Inter", sans-serif;
   color: #687076;
 }
@@ -222,6 +222,9 @@ body {
 header,
 .seccionhero {
   background-color: #fff;
+}
+
+header {
   border-bottom: 1px solid #f8f9fa;
 }
 
