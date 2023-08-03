@@ -265,7 +265,8 @@ nav ul li a {
   list-style: none;
 }
 
-nav ul li a:visited {
+nav ul li a:visited,
+nav ul li a:active {
   color: #687076;
 }
 
