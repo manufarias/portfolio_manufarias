@@ -95,7 +95,8 @@ nav ul li a {
   list-style: none;
 }
 
-nav ul li a:visited {
+nav ul li a:visited,
+nav ul li a {
   color: #687076;
 }
 
