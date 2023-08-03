@@ -311,7 +311,8 @@ h1 {
   list-style: none;
 }
 
-.footercontent a {
+.footercontent a,
+.footercontent a:visited {
   color: #fff;
   text-decoration: none;
   list-style: none;
