@@ -311,6 +311,12 @@ h1 {
   list-style: none;
 }
 
+.footercontent a {
+  color: #fff;
+  text-decoration: none;
+  list-style: none;
+}
+
 .footercontent p {
   font-size: 18px;
 }
