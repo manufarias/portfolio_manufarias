@@ -335,7 +335,7 @@ h1 {
   .proyectoscontent,
   .formacioncontent,
   .footercontent {
-    width: 700px;
+    width: 800px;
     margin: 0 auto;
     align-items: flex-start;
   }
