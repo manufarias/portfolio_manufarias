@@ -1,0 +1,35 @@
+// text colors
+
+$color--text: hsl(226, 6%, 40%);
+$color--text-dark: hsl(0, 0%, 100%);
+$color--text-strong: hsla(214, 15%, 30%, 1);
+$color--text-weak: hsl(215, 17%, 57%);
+$color--text-link: hsla(148, 92%, 31%, 1);
+$color--text-display-gradient: linear-gradient(
+  147deg,
+  #6a8bfa 2.6%,
+  #b14b99 65.68%,
+  #ee6b45 76.95%
+);
+$color--text-highlight-purple: hsla(272, 50%, 46%, 1);
+$color--text-highlight-green: hsla(133, 75%, 34%, 1);
+$color--text-highlight-yellow: hsla(43, 100%, 29%, 1);
+$color--text-highlight-blue: hsla(206, 92%, 21%, 1);
+
+// structural colors
+
+$color--background: hsl(0, 0%, 100%);
+$color--background-dark: hsl(207, 33%, 13%) c;
+
+$color--background-highlight-purple: hsla(277, 87%, 97%, 1);
+$color--background-highlight-green: hsla(120, 54%, 95%, 1);
+$color--background-highlight-yellow: hsla(50, 100%, 94%, 1);
+$color--background-highlight-blue: hsla(206, 41%, 97%, 1);
+
+$color--border: hsl(200, 8%, 93%);
+$color--border-highlight-purple: hsla(275, 65%, 88%, 1);
+$color--border-highlight-green: hsla(125, 38%, 80%, 1);
+$color--border-highlight-yellow: hsla(45, 90%, 73%, 1);
+$color--border-highlight-blue: hsl(206, 92%, 31%);
+
+$color--surface-raised: hsl(0, 0%, 99%);
